@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+<h1>全部博客</h1>
+{% endblock title %}
+
+{% block body %}
+<table>
+    <thead>
+        <tr>
+            <th align="center">博客列表</th>
+            <th align="center">发布日期</th>
+            <th align="cneter">阅读量</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for obj in object_list %}
+     <tr>
+     
+            <td id="title" align="center"><a href="{% url 'blog:blog_page' obj.id %}">{{ obj.title }}</a></td>
+            <td align="center">{{ obj.postData | date:"Y年m月d日" }}</td>
+            <td align="conter">{{ obj.readCount }}</td>
+        </tr>
+    {% endfor %}    
+    </tbody>
+</table>
+
+{% endblock body %}

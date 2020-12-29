@@ -1,0 +1,23 @@
+table{
+    width: 50%;
+    
+}
+
+table,td,th{
+    border: 1px solid cyan;
+    empty-cells: show;
+    border-collapse: collapse;
+
+}
+td{
+    background-color:beige;
+
+}
+th{
+    background-color: darkblue;
+    color:  beige;
+}
+#title{
+    background-color: bisque;
+    color: black;
+}

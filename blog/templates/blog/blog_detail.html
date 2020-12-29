@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+{% block title %}
+<h1>{{title}}</h1>
+<h2>postData:{{ postData }}&backsimeq;read:{{ readCount }}</h2>
+{% endblock title %}
+
+{% block body %}
+<div>
+    {{ text | safe }}
+</div>
+{% endblock body %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'index/css/style.css' %}">
+{% endblock head %}
+
+{% block body %}
+<div id="post_content">{{context | safe }}</div>
+{% endblock body %}

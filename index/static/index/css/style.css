@@ -1,0 +1,22 @@
+table{
+    width: 100%;
+}
+
+table,td,th{
+    border: 3px solid brown;
+    border-collapse: collapse;
+    empty-cells: show;
+
+}
+td{
+    padding: 15px;
+    height: 25px;
+    vertical-align:middle;
+    background-color:beige;
+
+}
+th{
+    padding: 15px;
+    background-color: aqua;
+    color:  blueviolet;
+}
