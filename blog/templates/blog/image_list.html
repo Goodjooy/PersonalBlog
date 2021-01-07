@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+
+{% block body %}
+<table>
+    <thead>
+        <th>图片发布日期</th>
+        <th>图片URL</th>
+    </thead>
+    <tbody>
+        {% for img in object_list %}
+        <tr>
+            <td>{{img.date| date:"Y年m月d日"}}</td>
+            <td><img height="600px" src="{{img.src.url}}"></a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock body %}

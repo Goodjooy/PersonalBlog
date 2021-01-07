@@ -5,3 +5,19 @@
 <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
 {% endblock head %}
 
+{% block body %}
+<div class="main-body">
+
+    <div class="left">
+        {% block left_body %}
+        <p>左栏</p>
+        {% endblock left_body %}
+    </div>
+    <div class="right">
+        {% block right_body %}
+        <p>右栏</p>
+        {% endblock right_body %}
+    </div>
+</div>
+{% endblock body %}
+
